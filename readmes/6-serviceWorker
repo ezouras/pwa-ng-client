@@ -1,0 +1,50 @@
+
+flow:To install a service worker for
+your site, you register a service worker
+from YOUR website.
+
+When you register the service wor
+
+
+
+The browser runs a service worker,
+or script, in the background. It is
+registered from your website (client/angular/javascript
+whatever) and installed on the browser
+and works on behalf of your application.
+you "add" a service worker to your app?
+but it's really on the browser.
+your app is communiating with the n
+browser service worker.
+
+This service worker manages caches for
+an application.
+
+they are also function as a network
+proxy. they intercept outgoing http
+requests made by your client and
+can choose how to respond to it.
+
+the network proxy is not limited
+to "fetch" requests. it can even
+include the initial
+request to the index.html
+
+the angular applicatin is made up
+of application bundles that get loaded
+on the page.  These bundles are lost
+after the user closes the page. if you
+go offline and reload, there will be no
+page.  HOwever, what the service worker
+caches is persercved.  when using it,
+depending on what you decide to cache,
+it is preserved even when the user is offline.
+
+
+
+It is separate from the webpage.
+The service worker is installed via
+a request from your webpage. You
+"register" a service worker via javascript
+on your client. When you register a service
+worker for your site, it is installed on the browser.

@@ -1,0 +1,17 @@
+<div class="header center">
+  Welcome to my page!
+</div>
+<div class="container center">
+  <div [ngClass]="{'disabledBtn':userSubscribed}" (click)="requestSubscription()" class="btn">
+    Click to receive notifications
+  </div>
+</div>
+<nav>
+  <div class="lnk-btn" routerLink="/view-subscriptions" routerLinkActive="active">get subscriptions
+  </div>
+  <div class="lnk-btn" routerLink="/send-notifications" routerLinkActive="active">send notifications
+  </div>
+</nav>
+<div class="image-container">
+  <img src="../assets/roses.jpeg" alt="">
+</div>

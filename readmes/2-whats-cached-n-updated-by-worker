@@ -1,0 +1,19 @@
+1/ bring up an incognito window and
+bring up the app.
+
+2/ open another tab, close the first
+DONT refresh the tab
+
+3/ stop the http server, make a change to angular,
+start the http-server again.
+
+4/ go back to your incognito tab, and put in
+>localhost:8080
+
+YOU DONT SEE THE CHANGE!
+that's what the service worker does. it's using
+what's cached.
+
+5/ refresh the page.
+6/ you will se the changes because the service
+worker did it in the background!

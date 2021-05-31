@@ -1,0 +1,10 @@
+.header{
+margin:1rem;
+}
+.subscriptionItem{
+font-size: .25rem;
+}
+.btn:hover{
+color:white;
+cursor: pointer
+}

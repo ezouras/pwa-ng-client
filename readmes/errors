@@ -1,0 +1,19 @@
+1/Could not subscribe to notifications Error:
+Service workers are disabled or not supported
+by this browser
+
+instead of using "ng serve", build
+and serve the index from the dist folder
+
+http-server -p 8080 -c-1 dist/<project-name>
+
+<post and get errors>
+1/ has been blocked by CORS policy:
+Cross origin requests are only supported for protocol schemes:
+http, data, chrome, chrome-extension, chrome-untrusted, https.
+
+Any time you see that “only supported for protocol schemes” message, it almost certainly
+means you’ve just forgotten to put the https or http on the
+request URL in your code.
+
+2/ 

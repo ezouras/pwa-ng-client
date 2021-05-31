@@ -1,0 +1,57 @@
+When the application runs this command:
+this.swPush.requestSubscription({
+  serverPublicKey: this.VAPID_PUBLIC_KEY
+}).then...
+
+It does not run the .then until the user clicks a button
+which resolves the promise.
+The user clicks "block" or "allow".
+This response gets cached in your browser. If you
+want to see the message again, you need to click on the
+"i" circle next to the address.
+
+Change the dropdown to "ask"
+
+Here is what is returned:
+
+PushSubscription {
+endpoint: "https://fcm.googleapis.com/fcm/send/d8v5mQ1t97w:AP…zaMhzKMsLTNf_JHRmLFC1TAm9K8x7T_Oc-BeaoS30RwubeFHb",
+expirationTime: null,
+options: PushSubscriptionOptions
+}
+
+the "options" property is another object:
+PushSubscriptionOptions {
+userVisibleOnly: true,
+applicationServerKey: ArrayBuffer(65)}
+applicationServerKey:
+ArrayBuffer(65)
+userVisibleOnly: true
+}
+
+So what is a push subscription endpoint? Click here for
+a deep dive:
+https://www.w3.org/TR/push-api/#:~:text=Each%20push%20subscription%20is%20associated,can%20send%20push%20messages%20to.
+
+Each push subscription is associated with
+a service worker. A service worker, that works
+on behalf of the application, has one and
+only one subsubscription. The "push subscription"
+delivers a message to the user. Do you want to allow
+notifications? If so, the web application can send you
+push notifications.
+
+a push service is a system. It allows applications to
+push messages to a web application. It serves the
+push endpoint for the "push subscriptions" it serves.
+
+The push subscription has an associated "push endpoint"
+it's an absolute URL, it's where the application
+sends the push messages.  it is the thing that uniquely
+identifies the push subscription.
+
+A service worker has a "pushManager" that has a "subscribe"
+method.  The browser then calls a display notification
+that asks the user if s(he) would like to subscribe
+to push notifications.  The promise completes
+after the user selects yes or no.

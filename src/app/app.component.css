@@ -1,0 +1,25 @@
+.header{
+border-bottom:1px solid #f64c72;
+padding:1rem;
+}
+.container{
+  padding:2rem;
+}
+.btn{
+  margin-right: 8rem;
+      margin-left: 8rem;
+}
+.image-container{
+margin-top:1rem;
+}
+img{
+width:100%;
+
+}
+.disabledBtn{
+background-color: #4d506b;
+color:#75788f;
+cursor:crosshair;
+border:none;
+
+}

@@ -1,0 +1,25 @@
+When I "allowed" notifications to
+instyle, this the payload in their post
+
+
+action: "subscribed"
+ca_rq: false
+ca_st: 0
+do_not_track: []
+domain_id: 8713
+domain_key: "J1PinBgTnfha7gKYnpPr0sKefMeCdtrdBpW4"
+event_date: "2021-05-31T11:45:29.069Z"
+meta: {subscription_data: {,…}, external_id: "7e090a16-78a6-4e4d-a954-dc7a10200832",…}
+amp: false
+browser_data: {bwpl: "desktop", bwdvos: "macOS", bwdvosvr: "10.15.7", bwdvct: null, bwdvvn: "Apple", bwnv: "Chrome",…}
+domain_key: "J1PinBgTnfha7gKYnpPr0sKefMeCdtrdBpW4"
+event_id: "gq1sLXDA2QOO9lUf9A0R48hihCZ70KRL"
+external_id: "7e090a16-78a6-4e4d-a954-dc7a10200832"
+language: "en-US"
+page_url: "https://www.instyle.com/beauty/skin/peter-thomas-roth-microdermabrasion-blackhead-eliminator-review?did=639217-20210530&utm_campaign=glow_newsletter&utm_source=instyle.com&utm_medium=email&utm_content=053021&cid=639217&mid=58775503523"
+prompt_id: 10431
+pushly_unique_user_id: "F36BASb2PGQ5e0VcI06Gj3wBRsjPsA9C"
+source: {application: "pushly-sdk", version: "2a090dc623fc66141a6371887c1ba12e3de44022"}
+subscribed_url: "https://www.instyle.com/beauty/skin/peter-thomas-roth-microdermabrasion-blackhead-eliminator-review?did=639217-20210530&utm_campaign=glow_newsletter&utm_source=instyle.com&utm_medium=email&utm_content=053021&cid=639217&mid=58775503523"
+subscription_data: {,…}
+time_zone: "America/Chicago"

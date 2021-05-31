@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+/*
+background 2 = #553D67
+#f64c72
+#66fcf1
+*/
+
+*,
+*::before,
+*::after{
+margin: 0;
+box-sizing:border-box;
+background-color:#36384c;
+color:#AED9DA;
+font-family: 'Kumbh Sans', sans-serif;
+font-size: 1.5rem;
+line-height: 1.75rem;
+}
+
+.header{
+  color:#f64c72;
+}
+.center{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}

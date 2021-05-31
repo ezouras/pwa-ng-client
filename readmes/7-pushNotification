@@ -1,0 +1,33 @@
+Server side:
+1/ we want to send a message to
+all the subscribers
+
+2/we trigger a push message.
+
+3/ this message is received by the browser.
+How does the server knjow which browser?
+the subscription endpoint.
+
+4/ How does the server know the subscription endpoint?
+When you created a "subscription" object, when you
+asked the user if they wanted to subscribe,
+you must send the subscription object to the server.
+the server
+keeps it somewhere. It goes thru it's subscriber
+objects and sends a push notification to those
+endpoints.
+
+5/ the browser receives the push notification.
+The browser figures out which service worker
+the push is for.  It does this via the subscription
+properties. probably the "key" ? that is associated
+with that subscription?
+
+6/
+https://developer.mozilla.org/en-US/docs/Web/API/Push_API
+The "Push_API"
+from SERVER to Browser (not your web app)
+
+7/ the NotificationsApi is what allows the message to
+be displayed by the browser
+from Browser to a popup notification for the user.

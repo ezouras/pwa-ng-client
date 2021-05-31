@@ -1,0 +1,18 @@
+Push API
+Notification api
+
+
+
+
+Vapid -a public key and a private key.
+a protocol for messaging in the web.
+
+web client requests that the browser
+asks the user if they will accept
+push notifications.
+
+Browser sends a message to the user
+and asks if it is ok to get
+notifications
+
+user accepts or rejects.

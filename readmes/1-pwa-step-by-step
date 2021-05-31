@@ -1,0 +1,26 @@
+1/ ng add @angular/pwa
+2/ ng build
+builds the files and puts them in dist/<project-name>
+in the project-name folder is the ngsw.json file
+that is needed
+3/ npm install http-server
+4/ http-server -p 8080 -c-1 dist/<project-name>
+or
+cd /dist/<project-name>
+http-server -p 8080 -c-1 .
+-serve this directory "."
+-disable cache "-c-1"  -c is cache, and the number
+after it is how long so -c10 would be max,-c-1 is min or disabled
+
+6/ you can go offline
+  -from the network
+    +after the "disable cache", arrow down, offline
+  -from application
+    +service-worker (above storage)
+      select "offline"
+7/ turn off wiifii /reload page - it's still there.
+this shows that the service worker is working
+8/ in the network tab in the "size" column, it shows "ServiceWorker"
+9/ in the ngsw-config.json file, I added a prefetch to the
+rose image so that if you go offline you can see that image .
+if you remove it from the file, you wont see it.

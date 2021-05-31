@@ -1,0 +1,7 @@
+npm install web-push -g
+web-push generate-vapid-keys --json
+
+{
+"publicKey":"BBobCiHo-HhUnv1pXD0hRGGgnEGiWfPVxSiRnfHw3M6b2e3AV4Qt0xhca5vdU5y948cgXms50iYo44CxZjosM-g",
+"privateKey":"_lBAscu8yF0mzW51N0LOGzsnpOBQXrNADJIUaOjguas"
+}

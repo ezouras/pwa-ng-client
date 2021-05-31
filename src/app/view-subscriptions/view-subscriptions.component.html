@@ -1,0 +1,19 @@
+<div class="center">
+  <div class="header">
+    View Subscriptions!
+  </div>
+  <div *ngIf="!stillLoading else loading">
+    <div *ngFor="let sub of subscriptions" class="subscriptionItem">
+      {{sub.endpoint}}
+    </div>
+  </div>
+  <div routerLink="/" class="btn">
+    Home
+  </div>
+  <ng-template #loading>
+    <div>Loading...</div>
+  </ng-template>
+  <ng-template #noSubscriptions>
+    <div>Sorry, no subscriptions yet</div>
+  </ng-template>
+</div>
